@@ -345,20 +345,49 @@
           </ul>
         </div>
         <form class="signup-newsletter-footer" name="signup-newsletter">
-        <label>
-          <span class="newsletter-tittle">Zapisz się do newslettera</span>
-          <div class="newsletter-send-box">
-            <input class="newsletter-input" type="email" name="email" placeholder="E-mail">
-            <button class="newsletter-button" type="submit">Zapisz się <svg class="newsletter-send-icon"><use href="./images/icons.svg#icon-send"></use></svg></button>
-          </div>
-        </label>
-      </form>
+          <label>
+            <span class="newsletter-tittle">Zapisz się do newslettera</span>
+            <div class="newsletter-send-box">
+              <input class="newsletter-input" type="email" name="email" placeholder="E-mail" />
+              <button class="newsletter-button" type="submit">
+                Zapisz się
+                <svg class="newsletter-send-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </label>
+        </form>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
+        <h2 class="modal-tittle">Zostaw swoje dane w formularzu poniżej</h2>
+        <form class="modal-form">
+          <label>
+            <span class="modal-form-text">Imie</span>
+            <input class="modal-form-input" type="text" name="name" />
+          </label>
+          <label>
+            <span class="modal-form-text">Telefon</span>
+            <input class="modal-form-input" type="tel" name="phone-number" />
+          </label>
+          <label>
+            <span class="modal-form-text">Email</span>
+            <input class="modal-form-input" type="email" name="email" />
+          </label>
+          <label>
+            <span class="modal-form-text">Komentarz</span>
+            <textarea class="modal-form-input" name="comments" rows="5" placeholder="Wprowadź tekst"></textarea>
+          </label>
+          <label>
+            <input type="checkbox" name="terms" value="check" />
+            <span>Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</span>
+          </label>
+          <button type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
 

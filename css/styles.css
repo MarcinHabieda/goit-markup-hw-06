@@ -900,3 +900,40 @@ h2 {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.4);
 }
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: center;
+}
+
+.modal-tittle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.modal-form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.2);
+  margin-top: 4px;
+}
+
+.modal-form-text {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+color: var(--secondary-text-color);
+}
+
+.modal-form > label:not(:first-child) {
+  margin-top: 10px;
+}
