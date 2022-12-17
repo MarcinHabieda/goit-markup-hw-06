@@ -104,6 +104,67 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.newsletter-tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.newsletter-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-color);
+  width: 200px;
+  height: 50px;
+  background: var(--highlight-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: 0;
+}
+
+button {
+  border: 0;
+}
+
+.newsletter-input {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--contact-footer-color);
+  padding-left: 10px;
+}
+
+.newsletter-send-box {
+  display: flex;
+}
+
+.newsletter-send-icon {
+  width: 24px;
+  margin-left: 24px;
+}
+
+.signup-newsletter-footer {
+  margin-left: 78px;
+  width: 570px;
+}
+
 .footer-container {
   padding-top: 60px;
   padding-left: 15px;
@@ -763,6 +824,7 @@ h2 {
   font-size: 14px;
   line-height: 1.14;
   color: var(--secondary-color);
+  text-transform: uppercase;
 }
 
 .close-btn {
