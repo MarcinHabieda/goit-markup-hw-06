@@ -368,23 +368,34 @@
         <form class="modal-form">
           <label>
             <span class="modal-form-text">Imie</span>
+            <svg class="modal-form-icon-user"><use href="./images/icons.svg#icon-user"></use></svg>
             <input class="modal-form-input" type="text" name="name" />
           </label>
-          <label>
+          <label class="modal-form-label">
             <span class="modal-form-text">Telefon</span>
+            <svg class="modal-form-icon-phone"><use href="./images/icons.svg#icon-phone"></use></svg>
             <input class="modal-form-input" type="tel" name="phone-number" />
           </label>
-          <label>
+          <label class="modal-form-label">
             <span class="modal-form-text">Email</span>
+            <svg class="modal-form-icon-mail"><use href="./images/icons.svg#icon-mail"></use></svg>
             <input class="modal-form-input" type="email" name="email" />
           </label>
-          <label>
+          <label class="modal-form-label">
             <span class="modal-form-text">Komentarz</span>
-            <textarea class="modal-form-input" name="comments" rows="5" placeholder="Wprowadź tekst"></textarea>
+            <textarea
+              class="modal-form-textarea"
+              name="comments"
+              rows="5"
+              placeholder="Wprowadź tekst"
+            ></textarea>
           </label>
-          <label>
-            <input type="checkbox" name="terms" value="check" />
-            <span>Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</span>
+          <label class="modal-form-label-checkbox">
+            <input class="modal-form-checkbox" type="checkbox" name="terms" value="check" />
+            <span class="modal-form-checkbox-text"
+              >Oświadczam iż akceptuję <span class="temrs-highlight">Regulamin</span> i
+              <span class="temrs-highlight">Politykę Prywatności.</span></span
+            >
           </label>
           <button type="submit">Wyślij</button>
         </form>
