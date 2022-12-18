@@ -158,6 +158,7 @@ button {
 .newsletter-send-icon {
   width: 24px;
   margin-left: 24px;
+  fill: var(--secondary-color);
 }
 
 .signup-newsletter-footer {
@@ -925,6 +926,9 @@ h2 {
   border-radius: 4px;
   margin-top: 4px;
   padding-left: 42px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-textarea {
@@ -936,6 +940,9 @@ h2 {
   margin-top: 4px;
   padding: 12px 16px;
   resize: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-text {
@@ -951,6 +958,8 @@ h2 {
 .modal-form-checkbox {
   width: 16px;
   height: 15px;
+  position: absolute;
+  opacity: 0;
 }
 
 .modal-form-checkbox-text {
@@ -992,6 +1001,9 @@ h2 {
   position: absolute;
   bottom: 14px;
   left: 15px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-icon-phone {
@@ -1000,6 +1012,9 @@ h2 {
   position: absolute;
   bottom: 13.74px;
   left: 14.27px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-icon-mail {
@@ -1008,8 +1023,58 @@ h2 {
   position: absolute;
   bottom: 14px;
   left: 13.5px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form > label {
   position: relative;
+}
+
+.modal-form-box:focus-within {
+  fill: var(--highlight-color);
+}
+
+.modal-form-input:focus {
+  border-color: var(--highlight-color);
+}
+
+.modal-form-box:hover {
+  fill: var(--highlight-color);
+}
+
+.modal-form-input:hover {
+  border-color: var(--highlight-color);
+}
+
+.modal-form-textarea:hover {
+  border-color: var(--highlight-color);
+}
+
+.modal-form-textarea:focus {
+  border-color: var(--highlight-color);
+}
+
+.modal-form-icon-check {
+  width: 11px;
+  height: 8px;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  stroke: var(--secondary-color);
+  stroke-width: 0.2px;
+}
+
+.modal-form-icon-checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 1px;
+  position: relative;
+}
+
+.modal-form-checkbox:checked + .modal-form-icon-checkbox {
+  background-color: var(--highlight-color);
+  border-color: var(--highlight-color);
 }

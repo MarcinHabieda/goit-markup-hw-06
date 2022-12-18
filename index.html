@@ -306,7 +306,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container footer-container">
         <div>
@@ -360,7 +359,6 @@
         </form>
       </div>
     </footer>
-
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
@@ -368,18 +366,30 @@
         <form class="modal-form">
           <label>
             <span class="modal-form-text">Imie</span>
-            <svg class="modal-form-icon-user"><use href="./images/icons.svg#icon-user"></use></svg>
-            <input class="modal-form-input" type="text" name="name" />
+            <div class="modal-form-box">
+              <svg class="modal-form-icon-user">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              <input class="modal-form-input" type="text" name="name" />
+            </div>
           </label>
           <label class="modal-form-label">
             <span class="modal-form-text">Telefon</span>
-            <svg class="modal-form-icon-phone"><use href="./images/icons.svg#icon-phone"></use></svg>
-            <input class="modal-form-input" type="tel" name="phone-number" />
+            <div class="modal-form-box">
+              <svg class="modal-form-icon-phone">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <input class="modal-form-input" type="tel" name="phone-number" />
+            </div>
           </label>
           <label class="modal-form-label">
             <span class="modal-form-text">Email</span>
-            <svg class="modal-form-icon-mail"><use href="./images/icons.svg#icon-mail"></use></svg>
-            <input class="modal-form-input" type="email" name="email" />
+            <div class="modal-form-box">
+              <svg class="modal-form-icon-mail">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              <input class="modal-form-input" type="email" name="email" />
+            </div>
           </label>
           <label class="modal-form-label">
             <span class="modal-form-text">Komentarz</span>
@@ -392,6 +402,11 @@
           </label>
           <label class="modal-form-label-checkbox">
             <input class="modal-form-checkbox" type="checkbox" name="terms" value="check" />
+            <div class="modal-form-icon-checkbox">
+              <svg class="modal-form-icon-check">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </div>
             <span class="modal-form-checkbox-text"
               >Oświadczam iż akceptuję <span class="temrs-highlight">Regulamin</span> i
               <span class="temrs-highlight">Politykę Prywatności.</span></span
@@ -401,7 +416,6 @@
         </form>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
