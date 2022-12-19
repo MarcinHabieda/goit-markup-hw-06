@@ -344,18 +344,22 @@
           </ul>
         </div>
         <form class="signup-newsletter-footer" name="signup-newsletter">
-          <label>
+          <label for="signup">
             <span class="newsletter-tittle">Zapisz się do newslettera</span>
-            <div class="newsletter-send-box">
-              <input class="newsletter-input" type="email" name="email" placeholder="E-mail" />
-              <button class="newsletter-button" type="submit">
-                Zapisz się
-                <svg class="newsletter-send-icon">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+            <input
+              id="signup"
+              class="newsletter-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
           </label>
+          <button class="newsletter-button" type="submit">
+            Zapisz się
+            <svg class="newsletter-send-icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>
@@ -364,35 +368,29 @@
         <button type="button" class="close-btn" data-modal-close>X</button>
         <h2 class="modal-tittle">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="modal-form">
-          <label>
-            <span class="modal-form-text">Imie</span>
-            <div class="modal-form-box">
-              <svg class="modal-form-icon-user">
-                <use href="./images/icons.svg#icon-user"></use>
-              </svg>
-              <input class="modal-form-input" type="text" name="name" />
-            </div>
-          </label>
+          <label class="modal-form-label" for="name"> Imie </label>
+          <div class="modal-form-box">
+            <svg class="modal-form-icon-user">
+              <use href="./images/icons.svg#icon-user"></use>
+            </svg>
+            <input class="modal-form-input" type="text" name="name" id="name" />
+          </div>
+          <label class="modal-form-label" for="phone-number"> Telefon </label>
+          <div class="modal-form-box">
+            <svg class="modal-form-icon-phone">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input class="modal-form-input" type="tel" name="phone-number" id="phone-number" />
+          </div>
+          <label class="modal-form-label" for="email"> Email </label>
+          <div class="modal-form-box">
+            <svg class="modal-form-icon-mail">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+            <input class="modal-form-input" type="email" name="email" id="email" />
+          </div>
           <label class="modal-form-label">
-            <span class="modal-form-text">Telefon</span>
-            <div class="modal-form-box">
-              <svg class="modal-form-icon-phone">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              <input class="modal-form-input" type="tel" name="phone-number" />
-            </div>
-          </label>
-          <label class="modal-form-label">
-            <span class="modal-form-text">Email</span>
-            <div class="modal-form-box">
-              <svg class="modal-form-icon-mail">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              <input class="modal-form-input" type="email" name="email" />
-            </div>
-          </label>
-          <label class="modal-form-label">
-            <span class="modal-form-text">Komentarz</span>
+            Komentarz
             <textarea
               class="modal-form-textarea"
               name="comments"
@@ -400,18 +398,24 @@
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <label class="modal-form-label-checkbox">
-            <input class="modal-form-checkbox" type="checkbox" name="terms" value="check" />
+          <div class="modal-form-checkbox-box">
+            <input
+              class="modal-form-checkbox"
+              type="checkbox"
+              name="terms"
+              value="check"
+              id="terms"
+            />
             <div class="modal-form-icon-checkbox">
               <svg class="modal-form-icon-check">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </div>
-            <span class="modal-form-checkbox-text"
-              >Oświadczam iż akceptuję <span class="temrs-highlight">Regulamin</span> i
-              <span class="temrs-highlight">Politykę Prywatności.</span></span
-            >
-          </label>
+            <label class="modal-form-label-checkbox" for="terms">
+              Oświadczam iż akceptuję&nbsp;<span class="temrs-highlight">Regulamin</span
+              >&nbsp;i&nbsp;<span class="temrs-highlight">Politykę Prywatności.</span>
+            </label>
+          </div>
           <button type="submit">Wyślij</button>
         </form>
       </div>

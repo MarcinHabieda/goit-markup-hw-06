@@ -128,6 +128,7 @@ body {
   margin-left: 10px;
   justify-content: center;
   align-items: center;
+  margin-top: 36px;
 }
 
 input {
@@ -151,10 +152,6 @@ button {
   padding-left: 10px;
 }
 
-.newsletter-send-box {
-  display: flex;
-}
-
 .newsletter-send-icon {
   width: 24px;
   margin-left: 24px;
@@ -164,6 +161,7 @@ button {
 .signup-newsletter-footer {
   margin-left: 78px;
   width: 570px;
+  display: flex;
 }
 
 .footer-container {
@@ -945,35 +943,39 @@ h2 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-text {
+.modal-form-label:not(:first-child) {
+  margin-top: 10px;
+}
+
+.modal-form-label {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   color: var(--secondary-text-color);
 }
 
-.modal-form-label {
-  margin-top: 10px;
-}
-
 .modal-form-checkbox {
   width: 16px;
   height: 15px;
-  position: absolute;
   opacity: 0;
+  position: absolute;
+  left: 25px;
+  z-index: 1;
 }
 
-.modal-form-checkbox-text {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--secondary-text-color);
-  margin-left: 8px;
-}
-
-.modal-form-label-checkbox {
+.modal-form-checkbox-box {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  position: relative;
+}
+
+.modal-form-label-checkbox {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-text-color);
+  margin-left: 8px;
 }
 
 .temrs-highlight {
@@ -1026,6 +1028,10 @@ h2 {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-box {
+  position: relative;
 }
 
 .modal-form > label {
